@@ -5,7 +5,7 @@ class PokemonController {
    async index(req, res){
        try{
            const pokemon = await Pokemon.find();
-           return   res.json({
+           return  res.json({
                pokemon
            })
        }catch(err){
